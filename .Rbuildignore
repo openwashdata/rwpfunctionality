@@ -1,3 +1,5 @@
 ^rwpfunctionality\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^LICENSE\.md$
+^CITATION\.cff$

@@ -1,0 +1,39 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "rwpfunctionality" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'rwpfunctionality: Water point functionality assessment in nine sub-Saharan
+  Africa and South Asia countries'
+version: 0.0.0.9000
+abstract: 'Water point monitoring data associated with the paper "Rural water point
+  functionality estimates and associations: evidence from nine countries in sub-Saharan
+  Africa and South Asia".'
+authors:
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@student.ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+date-released: '2024-03-11'
+contact:
+- family-names: Götschmann
+  given-names: Margaux
+  email: margauxg@student.ethz.ch
+  orcid: https://orcid.org/0009-0002-2567-3343
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2024'
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 2.10'
