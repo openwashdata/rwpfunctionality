@@ -6,6 +6,7 @@ data_in <- read_csv("data-raw/cw_Functionality_WP_data.csv")
 
 rwpfunctionality <- data_in
 
+rwpfunctionality |> names()
 
 
 # export data -------------------------------------------------------------
