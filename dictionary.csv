@@ -1,0 +1,5 @@
+﻿directory,file_name,variable_name,variable_type,description
+data-raw,rwpfunctionality.rda,country,,Country.
+,,org,,Organisational unit
+,,admin1,,Administrative unit 1.
+,,admin2,,Administrative unit 2.
