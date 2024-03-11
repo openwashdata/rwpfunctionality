@@ -1,15 +1,19 @@
 Package: rwpfunctionality
-Title: What the Package Does (One Line, Title Case)
+Title: Water point functionality assessment in nine sub-Saharan Africa and South
+    Asia countries
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Margaux", "Götschmann", , "margauxg@student.ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2567-3343"))
+Description: Water point monitoring data associated with the paper "Rural water
+    point functionality estimates and associations: evidence from nine countries in
+    sub-Saharan Africa and South Asia".
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true
+Language: en-GB
+Date: 2024-03-11
