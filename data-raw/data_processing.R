@@ -72,7 +72,9 @@ data_numeric_recoded_final <- data_numeric_recoded  |>
 # join non-numeric and recoded data
 
 rwpfunctionality <- data_numeric_recoded_final |>
-  left_join(data_non_numeric, by = "id")
+  left_join(data_non_numeric, by = "id") |>
+  select(-org)
+
 
 
 # Write data -------------------------------------------------------------
