@@ -1,53 +1,52 @@
 ﻿directory,file_name,variable_name,variable_type,description
-data,rwpfunctionality.rda,country,,Country.
-data,rwpfunctionality.rda,org,,Organisational unit
-data,rwpfunctionality.rda,admin1,,Administrative unit 1.
-data,rwpfunctionality.rda,admin2,,Administrative unit 2.
-data,rwpfunctionality.rda,admin3,,
-data,rwpfunctionality.rda,instance_wp,,
-data,rwpfunctionality.rda,subdate_wp,,
-data,rwpfunctionality.rda,latitude_wp,,
-data,rwpfunctionality.rda,longitude_wp,,
-data,rwpfunctionality.rda,elevation_wp,,
-data,rwpfunctionality.rda,commid_wp,,
-data,rwpfunctionality.rda,dataorg_wp,,
-data,rwpfunctionality.rda,timepoint_wp,,
-data,rwpfunctionality.rda,cwfunded_wp,,
-data,rwpfunctionality.rda,cwid,,
-data,rwpfunctionality.rda,wptype,,
-data,rwpfunctionality.rda,pumptype,,
-data,rwpfunctionality.rda,drillmethod,,
-data,rwpfunctionality.rda,piped_source,,
-data,rwpfunctionality.rda,piped_pump,,
-data,rwpfunctionality.rda,rehabyn,,
-data,rwpfunctionality.rda,qtyhh_wp,,
-data,rwpfunctionality.rda,whomanage_wp,,
-data,rwpfunctionality.rda,wp_age,,
-data,rwpfunctionality.rda,rehab_age,,
-data,rwpfunctionality.rda,qtypeople_wp,,
-data,rwpfunctionality.rda,wateravailable,,
-data,rwpfunctionality.rda,functional3,,
-data,rwpfunctionality.rda,whynowatertoday_wp,,
-data,rwpfunctionality.rda,whynowatertoday_wp_other,,
-data,rwpfunctionality.rda,minutesfill20l,,
-data,rwpfunctionality.rda,brokendays_wp,,
-data,rwpfunctionality.rda,qtymonthsnowater_wp,,
-data,rwpfunctionality.rda,downtime2weeks,,
-data,rwpfunctionality.rda,lockedfullday_wp,,
-data,rwpfunctionality.rda,pumpstrokes,,
-data,rwpfunctionality.rda,photo_wp,,
-data,rwpfunctionality.rda,grant_number_wp,,
-data,rwpfunctionality.rda,wc_present_wp,,
-data,rwpfunctionality.rda,paytocollect_wp,,
-data,rwpfunctionality.rda,balance_any_dollars_wp,,
-data,rwpfunctionality.rda,improved_wponly_wp,,
-data,rwpfunctionality.rda,qtyhh_c_wp,,
-data,rwpfunctionality.rda,wc_admin_index_wp,,
-data,rwpfunctionality.rda,wc_finance_index_wp,,
-data,rwpfunctionality.rda,wc_mgmt_index_wp,,
-data,rwpfunctionality.rda,wc_maint_index_wp,,
-data,rwpfunctionality.rda,wc_savings_wp,,
-data,rwpfunctionality.rda,wpqty_wp,,
-data,rwpfunctionality.rda,pop_1000,,
-data,rwpfunctionality.rda,annual_rain,,
-data,rwpfunctionality.rda,season,,
+data,rwpfunctionality.rda,country,,Name of the country
+data,rwpfunctionality.rda,admin1,,Administrative unit 1
+data,rwpfunctionality.rda,admin2,,Administrative unit 2
+data,rwpfunctionality.rda,admin3,,Administrative unit 3
+data,rwpfunctionality.rda,instance_wp,,Survey ID
+data,rwpfunctionality.rda,subdate_wp,,Submission date
+data,rwpfunctionality.rda,latitude_wp,,Latitude
+data,rwpfunctionality.rda,longitude_wp,,Longitude
+data,rwpfunctionality.rda,elevation_wp,,Elevation
+data,rwpfunctionality.rda,commid_wp,,Community ID 
+data,rwpfunctionality.rda,dataorg_wp,,Code for country program
+data,rwpfunctionality.rda,timepoint_wp,,Data collection time point
+data,rwpfunctionality.rda,cwfunded_wp,,Charity water-funded water point
+data,rwpfunctionality.rda,cwid,,Charity water point ID 
+data,rwpfunctionality.rda,wptype,,Water point type
+data,rwpfunctionality.rda,pumptype,,Pump type
+data,rwpfunctionality.rda,drillmethod,,Methodology used to dig the well or borehole
+data,rwpfunctionality.rda,piped_source,,Source of piped water
+data,rwpfunctionality.rda,piped_pump,,Infrastructure through which water travels from the source to the storage tank
+data,rwpfunctionality.rda,rehabyn,,This water point has undergone rehabilitation with the assistance of an outside organization since its construction
+data,rwpfunctionality.rda,qtyhh_wp,,"Number of households served by this water point, either presently or during its last operational period"
+data,rwpfunctionality.rda,whomanage_wp,,Primarily responsible for managing this water point
+data,rwpfunctionality.rda,wp_age,,Years between the reported construction year of the water point and the year of the survey
+data,rwpfunctionality.rda,rehab_age,,Years between the reported most recent rehabilitation year of the water point and the year of the survey
+data,rwpfunctionality.rda,qtypeople_wp,,"Number of people served by this water point, either now or the last time it was working"
+data,rwpfunctionality.rda,wateravailable,,Water availability from this water point
+data,rwpfunctionality.rda,functional3,,Functionality rating for water point
+data,rwpfunctionality.rda,whynowatertoday_wp,,Reason for unavailability of water from this water point today
+data,rwpfunctionality.rda,whynowatertoday_wp_other,,Other reason for water not being available today
+data,rwpfunctionality.rda,minutesfill20l,,Time required to fill the 20 liters container
+data,rwpfunctionality.rda,brokendays_wp,,Number of days it took to repair water the point last time it broke down
+data,rwpfunctionality.rda,qtymonthsnowater_wp,,Number of months in the past year when water was not available from this water point because it was dry
+data,rwpfunctionality.rda,downtime2weeks,,"Water has not been available from this water point for a full day or more due to breakdown, seasonal dryness, or lack of fuel or electricity in the past two weeks"
+data,rwpfunctionality.rda,lockedfullday_wp,,Service has been turned off or the water point has been locked in the past year by the management for reasons other than breakdowns
+data,rwpfunctionality.rda,pumpstrokes,,Number of pump strokes needed until water begins to flow 
+data,rwpfunctionality.rda,photo_wp,,Photograph of the water point
+data,rwpfunctionality.rda,grant_number_wp,,Water grant number
+data,rwpfunctionality.rda,wc_present_wp,,Existence of water committee in this community that manages water points used for drinking
+data,rwpfunctionality.rda,paytocollect_wp,,Obligation for people to contribute money to collect water in this community
+data,rwpfunctionality.rda,balance_any_dollars_wp,,Amount of money saved by the committee (converted to USD)
+data,rwpfunctionality.rda,improved_wponly_wp,,Number of improved water point types used in the community
+data,rwpfunctionality.rda,qtyhh_c_wp,,Number of households in this community
+data,rwpfunctionality.rda,wc_admin_index_wp,,Administrative index for water committee
+data,rwpfunctionality.rda,wc_finance_index_wp,,Finance index for water committee
+data,rwpfunctionality.rda,wc_mgmt_index_wp,,Maintenance index for water committee
+data,rwpfunctionality.rda,wc_maint_index_wp,,Overall management index for water committee 
+data,rwpfunctionality.rda,wc_savings_wp,,Existence of money saved from water committee to repair water points
+data,rwpfunctionality.rda,wpqty_wp,,"Number of drinking water points in this community, working or not"
+data,rwpfunctionality.rda,pop_1000,,Population aggregated for a 1-km radius around the water point (data from from https://www.worldpop.org/)
+data,rwpfunctionality.rda,annual_rain,,"Average annual mm of precipitation for administrative unit 2 (average from 1991-2020, from https://climateknowledgeportal.worldbank.org/) "
+data,rwpfunctionality.rda,season,,"Season of data collection, according to hostorical rainall amounts (from https://climateknowledgeportal.worldbank.org/)"
