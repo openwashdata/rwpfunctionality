@@ -6,7 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of rwpfunctionality is to …
+This package provides users documentation on both the water point
+functionality survey and the management committee survey conducted in
+nine countries in sub-Saharan Africa and South Asia.
 
 ## Installation
 
@@ -20,25 +22,23 @@ devtools::install_github("openwashdata/rwpfunctionality")
 
 ## Project goal
 
-The primary goal of BaSIS (Basic Sanitation Information System) within
-the context of implementing Community-Led Total Sanitation (CLTS) in
-Ghana is to combat open defecation. By collecting data on communities
-practicing open defecation, the project aims to shift away from previous
-subsidy-based approaches and focus on community engagement. BaSIS seeks
-to empower communities, particularly in regions like Upper West,
-Eastern, Northern, Volta, and Central, to abandon open defecation
-practices through CLTS. The objective is to break the cycle of
-fecal-oral contamination, reduce the spread of diseases linked to poor
-sanitation, and promote sustainable, community-driven solutions to
-improve overall hygiene and sanitation practices.
+Sustained functionality of rural water systems is a global challenge.
+Addressing premature failures and unreliable performance of water points
+is crucial to achieve the 2030 Sustainable Development Goal (SDG) 6,
+which calls for universal and equitable access to safe and affordable
+drinking water for all (WHO, 2017). As of 2020, 771 million people
+lacked a basic water service (WHO & UNICEF, 2021). Yet even for those
+with water services, unreliable water infrastructure that provides
+intermittent supply, or is broken down or abandoned, contributes to
+unsustainable and unsafe water access worldwide (Allaire et al., 2018;
+Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
 
 ## Data
 
-The data set includes the locations of the existing open defecation free
-(ODF) communities in various districts of Ghana. It was last updated in
-September 2017.
+The data set includes observations of water point functionality and
+management committee questionnaires.
 
-The package provides access to one data set.
+The package provides access to one single data set.
 
 ``` r
 library(rwpfunctionality)
@@ -81,8 +81,8 @@ citation("rwpfunctionality")
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {rwpfunctionality: Water point functionality assessment in nine sub-Saharan Africa
-#> and South Asia countries},
+#>     title = {rwpfunctionality: Water point functionality assessment in nine sub-Saharan Africa and South
+#> Asia countries},
 #>     author = {Margaux Götschmann},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},
