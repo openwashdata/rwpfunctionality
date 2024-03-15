@@ -85,7 +85,7 @@ rwpfunctionality$subdate_wp <- format(as.Date(rwpfunctionality$subdate_wp,
 # Adjust functional3, wc_admin_index_wp, wc_finance_index_wp,
 # wc_maint_index_wp and wc_mgmt_index_wp
 
-data_adjusted_1 <- rwpfunctionality %>%
+data_adjusted_1 <- rwpfunctionality |>
   mutate(functional3 = case_when(
     functional3 == "Fully functional: water is available, sufficient quantity is available - 20L in 5 minutes - and no downtime reported in prior 2 weeks" ~ "Functional",
     functional3 == "Not functional (no water available today OR (water available, but insufficient quantity AND downtime reported in prior 2 weeks))" ~ "Abandoned or not functional",
@@ -138,6 +138,26 @@ data_adjusted_5 <- rwpfunctionality |>
     ~ "Advanced"))
 
 rwpfunctionality <- data_adjusted_5
+
+# Reorder columns
+
+new_order <- c("id", "country", "admin1", "admin2", "admin3", "instance_wp",
+               "subdate_wp","latitude_wp", "longitude_wp", "elevation_wp",
+               "commid_wp", "dataorg_wp", "timepoint_wp", "cwfunded_wp", "cwid",
+               "wptype", "pumptype", "drillmethod", "piped_source",
+               "piped_pump", "rehabyn", "qtyhh_wp", "whomanage_wp", "wp_age",
+               "rehab_age", "qtypeople_wp", "wateravailable", "functional3",
+               "whynowatertoday_wp", "whynowatertoday_wp_other",
+               "minutesfill20l", "brokendays_wp", "qtymonthsnowater_wp",
+               "downtime2weeks", "lockedfullday_wp", "pumpstrokes", "photo_wp",
+               "grant_number_wp", "wc_present_wp", "paytocollect_wp",
+               "balance_any_dollars_wp", "improved_wponly_wp", "qtyhh_c_wp",
+               "wc_admin_index_wp", "wc_finance_index_wp", "wc_mgmt_index_wp",
+               "wc_maint_index_wp", "wc_savings_wp", "wpqty_wp", "pop_1000",
+               "annual_rain", "season")
+
+rwpfunctionality <- rwpfunctionality |>
+  select(new_order)
 
 # Write data -------------------------------------------------------------
 
