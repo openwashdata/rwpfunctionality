@@ -6,8 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package provides users documentation on both the water point
-functionality survey and the management committee survey conducted in
+This package provides users documentation on both a water point
+functionality survey and a management committee survey conducted in
 nine countries in sub-Saharan Africa and South Asia.
 
 ## Installation

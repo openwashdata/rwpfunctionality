@@ -18,9 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package provides users documentation on both the water point functionality
-survey and the management committee survey conducted in nine countries in 
-sub-Saharan Africa and South Asia.
+This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia.
 
 ## Installation
 
@@ -52,9 +50,18 @@ of the variable names, see the following table.
 
 ```{r, eval=FALSE}
 rwpfunctionality
+```
 
+```{r, echo=FALSE}
+readr::read_csv("data-raw/dictionary.csv", col_types = cols(.default = "c")) |> 
+  dplyr::filter(file_name == "rwpfunctionality.rda") |> 
+  dplyr::select(variable_name:description) |> 
+  knitr::kable()
+```
 
 ## Example
+
+### ...
 
 This is a basic example which shows you how to solve a common problem:
 
