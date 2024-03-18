@@ -52,14 +52,6 @@ For an overview of the variable names, see the following table.
 rwpfunctionality
 ```
 
-    #> Rows: 51 Columns: 5
-    #> ── Column specification ────────────────────────────────────────────────────────
-    #> Delimiter: ","
-    #> chr (5): directory, file_name, variable_name, variable_type, description
-    #> 
-    #> ℹ Use `spec()` to retrieve the full column specification for this data.
-    #> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-
 | variable_name            | variable_type | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |:-------------------------|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | country                  | character     | Name of the country                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
