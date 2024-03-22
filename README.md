@@ -154,7 +154,7 @@ What are the different types of water points?
 # Create a horizontal bar plot of water point types
 ggplot(rwpfunctionality, aes(x = wptype)) +
   geom_bar() +
-  labs(title = "Distribution of Water Point Types",
+  labs(title = "Distribution of Water Points Types",
        x = "Water Point Type",
        y = "Frequency") +
   coord_flip()  # Flip coordinates to make it horizontal
