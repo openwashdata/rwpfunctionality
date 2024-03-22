@@ -44,7 +44,10 @@ Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
 ## Data
 
 The data set includes observations of water point functionality and
-management committee questionnaires.
+management committee questionnaires. Displayed on the map are the
+locations of the water points.
+
+![](/Users/margauxg/Downloads/Bildschirmfoto%202024-03-22%20um%2013.46.09.png)
 
 The package provides access to one single data set.
 
@@ -140,7 +143,7 @@ rwpfunctionality |>
                     values = custom_colors)  # Custom legend labels
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 Based on this pie chart, it could be interesting to redefine the
 category “Partially functional” to gain insights and precision on this
 aspect of the data. However, we still clearly see that only a small part
@@ -160,7 +163,15 @@ ggplot(rwpfunctionality, aes(x = wptype)) +
   coord_flip()  # Flip coordinates to make it horizontal
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
+This plot provides insight into the distribution of different types of
+water points present in the data set. Understanding the prevalence of
+each type is valuable for various purposes, such as evaluating the
+functionality of each type to inform future development projects. For
+instance, it helps identifying which types are more common and could
+potentially inform decisions on prioritizing maintenance or constructing
+more efficient or suitable water point types.
 
 ## License
 
