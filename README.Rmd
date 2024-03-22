@@ -64,7 +64,7 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 The data set includes observations of water point functionality and management committee questionnaires.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(rwpfunctionality)
 library(leaflet)
 
@@ -72,9 +72,8 @@ map <- leaflet(rwpfunctionality) %>%
   addTiles() %>%
   addMarkers(~longitude_wp, ~latitude_wp,
              popup = ~paste("Elevation:", elevation_wp))
-
 map
-```
+
 
 The package provides access to one single data set.
 
