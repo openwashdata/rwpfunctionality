@@ -47,7 +47,7 @@ The data set includes observations of water point functionality and
 management committee questionnaires. Displayed on the map are the
 locations of the water points.
 
-![](/Users/margauxg/Documents/rwpfunctionality/Bildschirmfoto%202024-03-22%20um%2013.46.09.png)
+![](man/figures/map.png)
 
 The package provides access to one single data set.
 

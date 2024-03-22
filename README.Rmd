@@ -65,7 +65,7 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 The data set includes observations of water point functionality and management committee questionnaires. Displayed on the map are the locations of the water points.
 
-![](/Users/margauxg/Documents/rwpfunctionality/Bildschirmfoto 2024-03-22 um 13.46.09.png)
+![](man/figures/map.png)
 
 The package provides access to one single data set.
 
