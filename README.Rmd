@@ -23,6 +23,7 @@ library(tidyverse)
 # rwpfunctionality
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia.
@@ -64,16 +65,9 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 The data set includes observations of water point functionality and management committee questionnaires.
 
-{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(rwpfunctionality)
-library(leaflet)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
-map <- leaflet(rwpfunctionality) %>%
-  addTiles() %>%
-  addMarkers(~longitude_wp, ~latitude_wp,
-             popup = ~paste("Elevation:", elevation_wp))
-map
-
+```
 
 The package provides access to one single data set.
 
@@ -96,13 +90,13 @@ readr::read_csv("data-raw/dictionary.csv", col_types = NULL) |>
   knitr::kable()
 ```
 
-## Example
+## Examples
 
 ### Pie Chart of Water Points Functionality
 
 What are the statuses of the water points? Are they functional?
 
-```{r}
+```{r, message=FALSE}
 library(dplyr)
 library(ggplot2)
 
@@ -110,8 +104,8 @@ library(ggplot2)
 custom_colors <- c("lightblue", "orange", "purple")
 
 # Create the pie chart
-rwpfunctionality %>%
-  count(functional3) %>%
+rwpfunctionality |>
+  count(functional3) |> 
   ggplot(aes(x = "", y = n, fill = functional3)) +
   geom_bar(stat = "identity") +
   coord_polar("y", start = 0) +
@@ -123,6 +117,20 @@ rwpfunctionality %>%
                     values = custom_colors)  # Custom legend labels
 ```
 Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. However, we still clearly see that only a small part of the water points are functional.
+
+### Water Point Types
+
+What are the different types of water points?
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+# Create a horizontal bar plot of water point types
+ggplot(rwpfunctionality, aes(x = wptype)) +
+  geom_bar() +
+  labs(title = "Distribution of Water Point Types",
+       x = "Frequency",
+       y = "Water Point Type") +
+  coord_flip()  # Flip coordinates to make it horizontal
+```
 
 ## License
 

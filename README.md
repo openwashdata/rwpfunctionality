@@ -46,13 +46,6 @@ Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
 The data set includes observations of water point functionality and
 management committee questionnaires.
 
-{r, echo=FALSE, message=FALSE, warning=FALSE} library(rwpfunctionality)
-library(leaflet)
-
-map \<- leaflet(rwpfunctionality) %\>% addTiles() %\>%
-addMarkers(~longitude_wp, ~latitude_wp, popup = ~paste(“Elevation:”,
-elevation_wp)) map
-
 The package provides access to one single data set.
 
 ``` r
@@ -120,7 +113,7 @@ rwpfunctionality
 | annual_rain              | double        | Average annual mm of precipitation for administrative unit 2 (average from 1991-2020, from <https://climateknowledgeportal.worldbank.org/>)                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | season                   | character     | Season of data collection, according to hostorical rainall amounts (from <https://climateknowledgeportal.worldbank.org/>)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-## Example
+## Examples
 
 ### Pie Chart of Water Points Functionality
 
@@ -134,8 +127,8 @@ library(ggplot2)
 custom_colors <- c("lightblue", "orange", "purple")
 
 # Create the pie chart
-rwpfunctionality %>%
-  count(functional3) %>%
+rwpfunctionality |>
+  count(functional3) |> 
   ggplot(aes(x = "", y = n, fill = functional3)) +
   geom_bar(stat = "identity") +
   coord_polar("y", start = 0) +
@@ -145,15 +138,29 @@ rwpfunctionality %>%
        y = "Count") +  # y-axis label
   scale_fill_manual(labels = c("Functional", "Partially functional", "Abandoned or not functional"),
                     values = custom_colors)  # Custom legend labels
-#> Scale for fill is already present.
-#> Adding another scale for fill, which will replace the existing scale.
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 Based on this pie chart, it could be interesting to redefine the
 category “Partially functional” to gain insights and precision on this
 aspect of the data. However, we still clearly see that only a small part
 of the water points are functional.
+
+### Water Point Types
+
+What are the different types of water points?
+
+``` r
+# Create a horizontal bar plot of water point types
+ggplot(rwpfunctionality, aes(x = wptype)) +
+  geom_bar() +
+  labs(title = "Distribution of Water Point Types",
+       x = "Frequency",
+       y = "Water Point Type") +
+  coord_flip()  # Flip coordinates to make it horizontal
+```
+
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 ## License
 
