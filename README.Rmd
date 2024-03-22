@@ -1,5 +1,10 @@
 ---
 output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -26,7 +31,7 @@ This package offers users comprehensive documentation on surveys conducted to as
 
 You can install the development version of rwpfunctionality from [GitHub](https://github.com/) with:
 
-```{r}
+```r
 # install.packages("devtools")
 devtools::install_github("openwashdata/rwpfunctionality")
 ```
@@ -59,7 +64,7 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 The data set includes observations of water point functionality and management committee questionnaires.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(rwpfunctionality)
 library(leaflet)
 
@@ -85,7 +90,7 @@ of the variable names, see the following table.
 rwpfunctionality
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 readr::read_csv("data-raw/dictionary.csv", col_types = NULL) |> 
   dplyr::filter(file_name == "rwpfunctionality.rda") |> 
   dplyr::select(variable_name:description) |> 
@@ -99,14 +104,13 @@ readr::read_csv("data-raw/dictionary.csv", col_types = NULL) |>
 What are the statuses of the water points? Are they functional?
 
 ```{r}
-
 library(dplyr)
 library(ggplot2)
 
 # Define custom colors
 custom_colors <- c("lightblue", "orange", "purple")
 
-# Create the pie chart with legend at the right
+# Create the pie chart
 rwpfunctionality %>%
   count(functional3) %>%
   ggplot(aes(x = "", y = n, fill = functional3)) +
@@ -118,8 +122,6 @@ rwpfunctionality %>%
        y = "Count") +  # y-axis label
   scale_fill_manual(labels = c("Functional", "Partially functional", "Abandoned or not functional"),
                     values = custom_colors)  # Custom legend labels
-
-
 ```
 Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. However, we still clearly see that only a small part of the water points are functional.
 
