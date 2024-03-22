@@ -116,7 +116,7 @@ rwpfunctionality |>
 ```
 Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. However, we still clearly see that only a small part of the water points are functional.
 
-### Water Point Types
+### Water Points Types
 
 What are the different types of water points?
 
