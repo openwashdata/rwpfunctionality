@@ -21,8 +21,8 @@ You can install the development version of rwpfunctionality from
 devtools::install_github("openwashdata/rwpfunctionality")
 ```
 
-Alternatively, you can download the individual datasets as a CSV or XLSX
-file from the table below.
+Alternatively, you can download the dataset as a CSV or XLSX file from
+the table below.
 
 | dataset          | CSV                                                                                                         | XLSX                                                                                                          |
 |:-----------------|:------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
@@ -43,19 +43,19 @@ Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
 
 ## Data
 
-The data set includes observations of water point functionality and
+The dataset includes observations of water point functionality and
 management committee questionnaires. Displayed on the map are the
 locations of the water points.
 
 ![](man/figures/map.png)
 
-The package provides access to one single data set.
+The package provides access to one single dataset.
 
 ``` r
 library(rwpfunctionality)
 ```
 
-The `rwpfunctionality` data set has 52 variables and 1793 observations.
+The `rwpfunctionality` dataset has 52 variables and 1793 observations.
 For an overview of the variable names, see the following table.
 
 ``` r
@@ -166,7 +166,7 @@ ggplot(rwpfunctionality, aes(x = wptype)) +
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 This plot provides insight into the distribution of different types of
-water points present in the data set. Understanding the prevalence of
+water points present in the dataset. Understanding the prevalence of
 each type is valuable for various purposes, such as evaluating the
 functionality of each type to inform future development projects. For
 instance, it helps identifying which types are more common and could
