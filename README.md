@@ -47,7 +47,7 @@ The data set includes observations of water point functionality and
 management committee questionnaires. Displayed on the map are the
 locations of the water points.
 
-![](/Users/margauxg/Downloads/Bildschirmfoto%202024-03-22%20um%2013.46.09.png)
+![](/Users/margauxg/Documents/rwpfunctionality/Bildschirmfoto%202024-03-22%20um%2013.46.09.png)
 
 The package provides access to one single data set.
 
@@ -149,7 +149,7 @@ category “Partially functional” to gain insights and precision on this
 aspect of the data. However, we still clearly see that only a small part
 of the water points are functional.
 
-### Water Point Types
+### Water Points Types
 
 What are the different types of water points?
 
