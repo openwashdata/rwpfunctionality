@@ -11,6 +11,8 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+library(tidyverse)
 ```
 
 # rwpfunctionality
@@ -20,24 +22,11 @@ knitr::opts_chunk$set(
 
 This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia.
 
-```{r, echo=FALSE}
-
-library(rwpfunctionality)
-library(leaflet)
-
-map <- leaflet(rwpfunctionality) %>%
-  addTiles() %>%
-  addMarkers(~longitude_wp, ~latitude_wp,
-             popup = ~paste("Elevation:", elevation_wp))
-
-map
-```
-
 ## Installation
 
 You can install the development version of rwpfunctionality from [GitHub](https://github.com/) with:
 
-``` r
+```{r}
 # install.packages("devtools")
 devtools::install_github("openwashdata/rwpfunctionality")
 ```
@@ -69,6 +58,18 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 ## Data
 
 The data set includes observations of water point functionality and management committee questionnaires.
+
+```{r, echo=FALSE}
+library(rwpfunctionality)
+library(leaflet)
+
+map <- leaflet(rwpfunctionality) %>%
+  addTiles() %>%
+  addMarkers(~longitude_wp, ~latitude_wp,
+             popup = ~paste("Elevation:", elevation_wp))
+
+map
+```
 
 The package provides access to one single data set.
 
