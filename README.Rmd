@@ -37,7 +37,7 @@ You can install the development version of rwpfunctionality from [GitHub](https:
 devtools::install_github("openwashdata/rwpfunctionality")
 ```
 
-Alternatively, you can download the individual datasets as a CSV or XLSX
+Alternatively, you can download the dataset as a CSV or XLSX
 file from the table below.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -63,17 +63,17 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 ## Data
 
-The data set includes observations of water point functionality and management committee questionnaires. Displayed on the map are the locations of the water points.
+The dataset includes observations of water point functionality and management committee questionnaires. Displayed on the map are the locations of the water points.
 
 ![](man/figures/map.png)
 
-The package provides access to one single data set.
+The package provides access to one single dataset.
 
 ```{r, echo = TRUE}
 library(rwpfunctionality)
 ```
 
-The `rwpfunctionality` data set has `r ncol(rwpfunctionality)`
+The `rwpfunctionality` dataset has `r ncol(rwpfunctionality)`
 variables and `r nrow(rwpfunctionality)` observations. For an overview
 of the variable names, see the following table.
 
@@ -130,7 +130,7 @@ ggplot(rwpfunctionality, aes(x = wptype)) +
   coord_flip()  # Flip coordinates to make it horizontal
 ```
 
-This plot provides insight into the distribution of different types of water points present in the data set. Understanding the prevalence of each type is valuable for various purposes, such as evaluating the functionality of each type to inform future development projects. For instance, it helps identifying which types are more common and could potentially inform decisions on prioritizing maintenance or constructing more efficient or suitable water point types.
+This plot provides insight into the distribution of different types of water points present in the dataset. Understanding the prevalence of each type is valuable for various purposes, such as evaluating the functionality of each type to inform future development projects. For instance, it helps identifying which types are more common and could potentially inform decisions on prioritizing maintenance or constructing more efficient or suitable water point types.
 
 ## License
 
