@@ -20,6 +20,19 @@ knitr::opts_chunk$set(
 
 This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia.
 
+```{r, echo=FALSE}
+
+library(rwpfunctionality)
+library(leaflet)
+
+map <- leaflet(rwpfunctionality) %>%
+  addTiles() %>%
+  addMarkers(~longitude_wp, ~latitude_wp,
+             popup = ~paste("Elevation:", elevation_wp))
+
+map
+```
+
 ## Installation
 
 You can install the development version of rwpfunctionality from [GitHub](https://github.com/) with:
@@ -27,6 +40,25 @@ You can install the development version of rwpfunctionality from [GitHub](https:
 ``` r
 # install.packages("devtools")
 devtools::install_github("openwashdata/rwpfunctionality")
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/rwpfunctionality/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
 ```
 
 ## Project goal
@@ -61,14 +93,34 @@ readr::read_csv("data-raw/dictionary.csv", col_types = NULL) |>
 
 ## Example
 
-### ...
+### Pie Chart of Water Points Functionality
 
-This is a basic example which shows you how to solve a common problem:
+What are the statuses of the water points? Are they functional?
 
-```{r example}
-library(rwpfunctionality)
-## basic example code
+```{r}
+
+library(dplyr)
+library(ggplot2)
+
+# Define custom colors
+custom_colors <- c("lightblue", "orange", "purple")
+
+# Create the pie chart with legend at the right
+rwpfunctionality %>%
+  count(functional3) %>%
+  ggplot(aes(x = "", y = n, fill = functional3)) +
+  geom_bar(stat = "identity") +
+  coord_polar("y", start = 0) +
+  scale_fill_manual(values = custom_colors) +  # Set custom colors
+  labs(title = "Functionality rating for water points", fill = NULL,
+       x = "",  # Empty x-axis label
+       y = "Count") +  # y-axis label
+  scale_fill_manual(labels = c("Functional", "Partially functional", "Abandoned or not functional"),
+                    values = custom_colors)  # Custom legend labels
+
+
 ```
+Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. However, we still clearly see that only a small part of the water points are functional.
 
 ## License
 
