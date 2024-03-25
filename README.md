@@ -178,6 +178,8 @@ instance, it helps identifying which types are more common and could
 potentially inform decisions on prioritizing maintenance or constructing
 more efficient or suitable water point types.
 
+## References
+
 ## License
 
 Data are available as
@@ -205,8 +207,6 @@ citation("rwpfunctionality")
 #>     note = {R package version 0.0.0.9000},
 #>   }
 ```
-
-## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 

@@ -133,6 +133,12 @@ ggplot(rwpfunctionality, aes(x = wptype)) +
 
 This plot provides insight into the distribution of different types of water points present in the dataset. Understanding the prevalence of each type is valuable for various purposes, such as evaluating the functionality of each type to inform future development projects. For instance, it helps identifying which types are more common and could potentially inform decisions on prioritizing maintenance or constructing more efficient or suitable water point types.
 
+## References
+
+```{html, echo = FALSE}
+<div id="refs"></div>
+```
+
 ## License
 
 Data are available as 
@@ -144,10 +150,4 @@ To cite this package, please use:
 
 ```{r}
 citation("rwpfunctionality")
-```
-
-## References
-
-```{html, echo = FALSE}
-<div id="refs"></div>
 ```
