@@ -2,12 +2,19 @@ Package: rwpfunctionality
 Title: Water point functionality assessment in nine sub-Saharan Africa and South
     Asia countries
 Version: 0.0.0.9000
-Authors@R: 
-    person("Margaux", "Götschmann", , "margauxg@student.ethz.ch", role = c("aut", "cre"),
-           comment = c(ORCID = "0009-0002-2567-3343"))
-Description: Water point monitoring data associated with the paper "Rural water
-    point functionality estimates and associations: evidence from nine countries in
-    sub-Saharan Africa and South Asia".
+Authors@R: c(
+    person("Margaux", "Götschmann", "margauxg@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2567-3343")),
+    person("Anna L.", "Murray", "zutana@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-0909-2012")),
+    person("Gabriela", "Stone", "gastone@ucsd.edu", role = "aut", comment = c(ORCID = "0000-0002-3102-7500")),
+    person("Audrey R.", "Yang", role = "aut", comment = c(ORCID = "0000-0002-2910-2823")),
+    person("Nicholas F.", "Lawrence", role = "aut"),
+    person("Hannah", "Matthews", role = "aut"),
+    person("Georgia L.", "Kayser", role = "aut", comment = c(ORCID = "0000-0002-3273-184X"))
+           )
+Description: Water point monitoring data associated with the paper "[Rural water point
+  functionality estimates and associations: evidence from nine countries in sub-Saharan
+  Africa and South Asia](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR034679)" (Murray, Anna L et al., 2024).
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
