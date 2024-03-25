@@ -9,7 +9,10 @@
 This package offers users comprehensive documentation on surveys
 conducted to assess water point functionality and management committees.
 These surveys were carried out across nine countries in both sub-Saharan
-Africa and South Asia.
+Africa and South Asia. The data was published alongside the article
+“Rural water point functionality estimates and associations: evidence
+from nine countries in sub-Saharan Africa and South Asia” (Murray et al.
+2024).
 
 ## Installation
 
@@ -34,12 +37,14 @@ Sustained functionality of rural water systems is a global challenge.
 Addressing premature failures and unreliable performance of water points
 is crucial to achieve the 2030 Sustainable Development Goal (SDG) 6,
 which calls for universal and equitable access to safe and affordable
-drinking water for all (WHO, 2017). As of 2020, 771 million people
-lacked a basic water service (WHO & UNICEF, 2021). Yet even for those
-with water services, unreliable water infrastructure that provides
-intermittent supply, or is broken down or abandoned, contributes to
-unsustainable and unsafe water access worldwide (Allaire et al., 2018;
-Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
+drinking water for all (“Safely Managed Drinking-Water” 2017). As of
+2020, 771 million people lacked a basic water service (“Progress on
+Household Drinking Water, Sanitation and Hygiene, 2000-2020: Five Years
+into the SDGs” 2021). Yet even for those with water services, unreliable
+water infrastructure that provides intermittent supply, or is broken
+down or abandoned, contributes to unsustainable and unsafe water access
+worldwide (Allaire, Wu, and Lall 2018; Burt et al. 2018; Klug, Shields,
+and Bartram 2018; Valcourt et al. 2020).
 
 ## Data
 
@@ -200,3 +205,72 @@ citation("rwpfunctionality")
 #>     note = {R package version 0.0.0.9000},
 #>   }
 ```
+
+## References
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-allaire2018national" class="csl-entry">
+
+Allaire, Maura, Haowei Wu, and Upmanu Lall. 2018. “National Trends in
+Drinking Water Quality Violations.” *Proceedings of the National Academy
+of Sciences* 115 (9): 2078–83.
+<https://doi.org/10.1073/pnas.1719805115>.
+
+</div>
+
+<div id="ref-burt2018intermittent" class="csl-entry">
+
+Burt, Zachary, Ayşe Ercümen, Narayana Billava, and Isha Ray. 2018. “From
+Intermittent to Continuous Service: Costs, Benefits, Equity and
+Sustainability of Water System Reforms in Hubli-Dharwad, India.” *World
+Development* 109 (C): 121–33.
+
+</div>
+
+<div id="ref-klug2018categorization" class="csl-entry">
+
+Klug, Tori, Katherine Shields, and Jamie Bartram. 2018. “A
+Categorization of Water System Breakdowns: Evidence from Liberia,
+Nigeria, Tanzania, and Uganda.” *Science of The Total Environment*
+619620 (April): 1126–32.
+<https://doi.org/10.1016/j.scitotenv.2017.11.183>.
+
+</div>
+
+<div id="ref-murray2024rural" class="csl-entry">
+
+Murray, Anna L., Gabriela Stone, Audrey R. Yang, Nicholas F. Lawrence,
+Hannah Matthews, and Georgia L. Kayser. 2024. “Rural Water Point
+Functionality Estimates and Associations: Evidence From Nine Countries
+in Sub-Saharan Africa and South Asia.” *Water Resources Research* 60
+(2): e2023WR034679. <https://doi.org/10.1029/2023WR034679>.
+
+</div>
+
+<div id="ref-nina2021progressa" class="csl-entry">
+
+“Progress on Household Drinking Water, Sanitation and Hygiene,
+2000-2020: Five Years into the SDGs.” 2021. *UNICEF DATA*.
+https://data.unicef.org/resources/progress-on-household-drinking-water-sanitation-and-hygiene-2000-2020/.
+
+</div>
+
+<div id="ref-safely" class="csl-entry">
+
+“Safely Managed Drinking-Water.” 2017.
+https://www.who.int/publications-detail-redirect/9789241565424.
+
+</div>
+
+<div id="ref-valcourt2020understanding" class="csl-entry">
+
+Valcourt, Nicholas, Jeffrey Walters, Amy Javernick-Will, Karl Linden,
+and Betelhem Hailegiorgis. 2020. “Understanding Rural Water Services as
+a Complex System: An Assessment of Key Factors as Potential Leverage
+Points for Improved Service Sustainability.” *Sustainability* 12 (3):
+1243. <https://doi.org/10.3390/su12031243>.
+
+</div>
+
+</div>

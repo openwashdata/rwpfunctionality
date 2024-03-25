@@ -5,6 +5,7 @@ editor_options:
   markdown: 
     wrap: 72
   chunk_output_type: console
+bibliography: references.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -26,7 +27,7 @@ library(tidyverse)
 
 <!-- badges: end -->
 
-This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia.
+This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia. The data was published alongside the article "Rural water point functionality estimates and associations: evidence from nine countries in sub-Saharan Africa and South Asia" [@murray2024rural].
 
 ## Installation
 
@@ -58,7 +59,7 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Project goal
 
-Sustained functionality of rural water systems is a global challenge. Addressing premature failures and unreliable performance of water points is crucial to achieve the 2030 Sustainable Development Goal (SDG) 6, which calls for universal and equitable access to safe and affordable drinking water for all (WHO, 2017). As of 2020, 771 million people lacked a basic water service (WHO & UNICEF, 2021). Yet even for those with water services, unreliable water infrastructure that provides intermittent supply, or is broken down or abandoned, contributes to unsustainable and unsafe water access worldwide (Allaire et al., 2018; Burt et al., 2018; Klug et al., 2018; Valcourt et al., 2020).
+Sustained functionality of rural water systems is a global challenge. Addressing premature failures and unreliable performance of water points is crucial to achieve the 2030 Sustainable Development Goal (SDG) 6, which calls for universal and equitable access to safe and affordable drinking water for all [@safely]. As of 2020, 771 million people lacked a basic water service [@nina2021progressa]. Yet even for those with water services, unreliable water infrastructure that provides intermittent supply, or is broken down or abandoned, contributes to unsustainable and unsafe water access worldwide [@allaire2018national; @burt2018intermittent; @klug2018categorization; @valcourt2020understanding].
 
 
 ## Data
@@ -145,4 +146,8 @@ To cite this package, please use:
 citation("rwpfunctionality")
 ```
 
+## References
 
+```{html, echo = FALSE}
+<div id="refs"></div>
+```
