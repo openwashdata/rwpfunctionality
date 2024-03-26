@@ -2,7 +2,7 @@
 # CITATION file created with {cffr} R package, v1.0.0
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
-
+ 
 cff-version: 1.2.0
 message: 'To cite package "rwpfunctionality" in publications use:'
 type: software
@@ -16,13 +16,16 @@ abstract: 'Water point monitoring data associated with the paper "[Rural water p
   (Murray, Anna L et al., 2024).'
 authors:
 - family-names: Götschmann
-  given-names: Margaux margauxg@ethz.ch
+  given-names: Margaux
+  email: margauxg@ethz.ch
   orcid: https://orcid.org/0009-0002-2567-3343
 - family-names: Murray
-  given-names: Anna L. zutana@gmail.com
+  given-names: Anna L.
+  email: zutana@gmail.com
   orcid: https://orcid.org/0000-0003-0909-2012
 - family-names: Stone
-  given-names: Gabriela gastone@ucsd.edu
+  given-names: Gabriela
+  email: gastone@ucsd.edu
   orcid: https://orcid.org/0000-0002-3102-7500
 - family-names: Yang
   given-names: Audrey R.
@@ -34,8 +37,9 @@ authors:
 - family-names: Kayser
   given-names: Georgia L.
   orcid: https://orcid.org/0000-0002-3273-184X
-date-released: '2024-03-11'
+date-released: '2024-03-26'
 contact:
 - family-names: Götschmann
-  given-names: Margaux margauxg@ethz.ch
+  given-names: Margaux
+  email: margauxg@ethz.ch
   orcid: https://orcid.org/0009-0002-2567-3343

@@ -768,18 +768,18 @@ To cite this package, please use:
 citation("rwpfunctionality")
 #> To cite package 'rwpfunctionality' in publications use:
 #> 
-#>   Götschmann M (2024). _rwpfunctionality: Water point functionality
-#>   assessment in nine sub-Saharan Africa and South Asia countries_. R
-#>   package version 0.0.0.9000.
+#>   Götschmann M, Murray A, Stone G, Yang A, Lawrence N, Matthews H,
+#>   Kayser G (2024). "rwpfunctionality: Water point functionality
+#>   assessment in nine sub-Saharan Africa and South Asia countries."
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
-#>     title = {rwpfunctionality: Water point functionality assessment in nine sub-Saharan Africa
-#> and South Asia countries},
-#>     author = {Margaux Götschmann},
+#>   @Misc{gotschmann_etall:2024,
+#>     title = {rwpfunctionality: Water point functionality assessment in nine sub-Saharan Africa and South Asia countries},
+#>     author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     abstract = {Water point monitoring data associated with the paper "[Rural water point functionality estimates and associations: evidence from nine countries in sub-Saharan Africa and South Asia](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR034679)" (Murray, Anna L et al., 2024).},
+#>     version = {0.0.0.9000},
 #>   }
 ```
 
