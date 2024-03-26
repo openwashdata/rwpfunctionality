@@ -83,10 +83,12 @@ rwpfunctionality
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-readr::read_csv("data-raw/dictionary.csv", col_types = NULL) |> 
+readr::read_csv("data-raw/dictionary.csv") |> 
   dplyr::filter(file_name == "rwpfunctionality.rda") |> 
   dplyr::select(variable_name:description) |> 
-  knitr::kable()
+  knitr::kable() |> 
+  kableExtra::kable_styling() |> 
+  kableExtra::scroll_box(height = "400px")
 ```
 
 ## Examples
