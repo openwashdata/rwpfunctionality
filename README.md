@@ -8,6 +8,7 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.10878634)
 <!-- badges: end -->
 
 This package offers users comprehensive documentation on surveys
@@ -631,10 +632,9 @@ character
 <td style="text-align:left;">
 Overall management index for water committee: ‘Inadequate’ means WC is
 inadequate in any of the above indices, ‘Minimum’ means WC meets minimum
-level in all above indices \[“Operational” Committee\], ‘Moderate’ means
-WC meets moderate level in all above indices and ‘Advanced’ means WC
-meets moderate level in all above indices AND advanced level in at least
-one of the above
+level in all above indices, ‘Moderate’ means WC meets moderate level in
+all above indices and ‘Advanced’ means WC meets moderate level in all
+above indices AND advanced level in at least one of the above
 </td>
 </tr>
 <tr>

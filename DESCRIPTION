@@ -1,7 +1,7 @@
 Package: rwpfunctionality
 Title: Water point functionality assessment in nine sub-Saharan Africa and South
     Asia countries
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c(
     person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0002-2567-3343")),

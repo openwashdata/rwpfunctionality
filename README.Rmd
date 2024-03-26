@@ -26,6 +26,7 @@ library(tidyverse)
 <!-- badges: start -->
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.10878634)
 <!-- badges: end -->
 
 This package offers users comprehensive documentation on surveys conducted to assess water point functionality and management committees. These surveys were carried out across nine countries in both sub-Saharan Africa and South Asia. The data was published alongside the article "Rural water point functionality estimates and associations: evidence from nine countries in sub-Saharan Africa and South Asia" [@murray2024rural].
