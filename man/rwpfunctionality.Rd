@@ -3,8 +3,7 @@
 \docType{data}
 \name{rwpfunctionality}
 \alias{rwpfunctionality}
-\title{Water point functionality assessment in nine sub-Saharan Africa and South
-Asia countries}
+\title{Water point functionality in sub-Saharan Africa and South Asia}
 \format{
 A tibble with 1793 rows and 52 variables
 \describe{

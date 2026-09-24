@@ -1,7 +1,7 @@
 
 bibentry(bibtype = "Misc",
          key = "gotschmann_etall:2024",
-         title = "rwpfunctionality: Water point functionality assessment in nine sub-Saharan Africa and South Asia countries",
+         title = "rwpfunctionality: Water point functionality in sub-Saharan Africa and South Asia",
          author = c(person(given = "Margaux",
                            family = "Götschmann",
                            email = "margauxg@ethz.ch",
