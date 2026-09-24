@@ -18,7 +18,6 @@ Description: Water point monitoring data associated with the paper "[Rural water
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true
@@ -30,3 +29,4 @@ BugReports: https://github.com/openwashdata/rwpfunctionality/issues
 X-schema.org-keywords: open data, washdata, water points, functionality, rural water supply, water committees, Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
 X-schema.org-spatialCoverage: Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
 X-schema.org-temporalCoverage: 2017-05-22/2020-12-19
+Config/roxygen2/version: 8.0.0

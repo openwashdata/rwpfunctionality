@@ -8,6 +8,7 @@ Asia countries}
 \format{
 A tibble with 1793 rows and 52 variables
 \describe{
+\item{id}{Row number assigned during processing}
 \item{country}{Name of the country}
 \item{admin1}{Administrative unit 1}
 \item{admin2}{Administrative unit 2}
