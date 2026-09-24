@@ -1,5 +1,4 @@
-#' Water point functionality assessment in nine sub-Saharan Africa and South
-#' Asia countries
+#' Water point functionality in sub-Saharan Africa and South Asia
 #'
 #' Water point monitoring data associated with the paper "[Rural water point
 #' functionality estimates and associations: evidence from nine countries in sub-Saharan
@@ -7,6 +6,7 @@
 #'
 #' @format A tibble with 1793 rows and 52 variables
 #' \describe{
+#'   \item{id}{Row number assigned during processing}
 #'   \item{country}{Name of the country}
 #'   \item{admin1}{Administrative unit 1}
 #'   \item{admin2}{Administrative unit 2}
