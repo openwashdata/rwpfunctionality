@@ -38,14 +38,18 @@ authors:
 - family-names: Kayser
   given-names: Georgia L.
   orcid: https://orcid.org/0000-0002-3273-184X
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
 repository-code: https://github.com/openwashdata/rwpfunctionality
 url: https://github.com/openwashdata/rwpfunctionality
 date-released: '2024-03-11'
 contact:
-- family-names: Götschmann
-  given-names: Margaux
-  email: margauxg@ethz.ch
-  orcid: https://orcid.org/0009-0002-2567-3343
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
 keywords:
 - open data
 - washdata
