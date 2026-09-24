@@ -2,7 +2,7 @@
 
 ## Authors
 
-- **Margaux Götschmann**. Author, maintainer.
+- **Margaux Götschmann**. Author.
   [](https://orcid.org/0009-0002-2567-3343)
 
 - **Anna L. Murray**. Author. [](https://orcid.org/0000-0003-0909-2012)
@@ -18,20 +18,23 @@
 - **Georgia L. Kayser**. Author.
   [](https://orcid.org/0000-0002-3273-184X)
 
+- **Lars Schöbitz**. Maintainer.
+  [](https://orcid.org/0000-0003-2196-5015)
+
 ## Citation
 
 Source:
 [`inst/CITATION`](https://github.com/openwashdata/rwpfunctionality/blob/main/inst/CITATION)
 
 Götschmann M, Murray A, Stone G, Yang A, Lawrence N, Matthews H, Kayser
-G (2024). “rwpfunctionality: Water point functionality in sub-Saharan
-Africa and South Asia.”
+G, Schöbitz L (2024). “rwpfunctionality: Water point functionality in
+sub-Saharan Africa and South Asia.”
 [doi:10.5281/zenodo.10878634](https://doi.org/10.5281/zenodo.10878634).
 <https://github.com/openwashdata/rwpfunctionality>.
 
     @Misc{gotschmann_etall:2024,
       title = {rwpfunctionality: Water point functionality in sub-Saharan Africa and South Asia},
-      author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser},
+      author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser and Lars Schöbitz},
       year = {2024},
       doi = {10.5281/zenodo.10878634},
       url = {https://github.com/openwashdata/rwpfunctionality},

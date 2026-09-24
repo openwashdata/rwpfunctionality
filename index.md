@@ -192,8 +192,9 @@ citation("rwpfunctionality")
 #> To cite package 'rwpfunctionality' in publications use:
 #> 
 #>   Götschmann M, Murray A, Stone G, Yang A, Lawrence N, Matthews H,
-#>   Kayser G (2024). "rwpfunctionality: Water point functionality in
-#>   sub-Saharan Africa and South Asia." doi:10.5281/zenodo.10878634
+#>   Kayser G, Schöbitz L (2024). "rwpfunctionality: Water point
+#>   functionality in sub-Saharan Africa and South Asia."
+#>   doi:10.5281/zenodo.10878634
 #>   <https://doi.org/10.5281/zenodo.10878634>.
 #>   <https://github.com/openwashdata/rwpfunctionality>.
 #> 
@@ -201,7 +202,7 @@ citation("rwpfunctionality")
 #> 
 #>   @Misc{gotschmann_etall:2024,
 #>     title = {rwpfunctionality: Water point functionality in sub-Saharan Africa and South Asia},
-#>     author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser},
+#>     author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser and Lars Schöbitz},
 #>     year = {2024},
 #>     doi = {10.5281/zenodo.10878634},
 #>     url = {https://github.com/openwashdata/rwpfunctionality},
