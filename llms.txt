@@ -1,0 +1,255 @@
+# rwpfunctionality
+
+This package offers users comprehensive documentation on surveys
+conducted to assess water point functionality and management committees.
+These surveys were carried out across nine countries in both sub-Saharan
+Africa and South Asia. The data was published alongside the article
+“Rural water point functionality estimates and associations: evidence
+from nine countries in sub-Saharan Africa and South Asia” (Murray et al.
+2024).
+
+## Installation
+
+You can install the development version of rwpfunctionality from
+[GitHub](https://github.com/) with:
+
+``` r
+
+# install.packages("devtools")
+devtools::install_github("openwashdata/rwpfunctionality")
+```
+
+Alternatively, you can download the dataset as a CSV or XLSX file from
+the table below.
+
+| dataset | CSV | XLSX |
+|:---|:---|:---|
+| rwpfunctionality | [Download CSV](https://github.com/openwashdata/rwpfunctionality/raw/main/inst/extdata/rwpfunctionality.csv) | [Download XLSX](https://github.com/openwashdata/rwpfunctionality/raw/main/inst/extdata/rwpfunctionality.xlsx) |
+
+## Project goal
+
+Sustained functionality of rural water systems is a global challenge.
+Addressing premature failures and unreliable performance of water points
+is crucial to achieve the 2030 Sustainable Development Goal (SDG) 6,
+which calls for universal and equitable access to safe and affordable
+drinking water for all (*Safely Managed Drinking-Water* 2017). As of
+2020, 771 million people lacked a basic water service (“Progress on
+Household Drinking Water, Sanitation and Hygiene, 2000-2020” 2021). Yet
+even for those with water services, unreliable water infrastructure that
+provides intermittent supply, or is broken down or abandoned,
+contributes to unsustainable and unsafe water access worldwide (Allaire
+et al. 2018; Burt et al. 2018; Klug et al. 2018; Valcourt et al. 2020).
+
+## Data
+
+The dataset includes observations of water point functionality and
+management committee questionnaires. Displayed on the map are the
+locations of the water points.
+
+![Map of the water point locations in the nine
+countries](reference/figures/map.png)
+
+The package provides access to one single dataset.
+
+``` r
+
+library(rwpfunctionality)
+```
+
+The `rwpfunctionality` dataset has 52 variables and 1793 observations.
+For an overview of the variable names, see the following table.
+
+``` r
+
+rwpfunctionality
+```
+
+| variable_name | variable_type | description |
+|:---|:---|:---|
+| id | double | Row number assigned during processing |
+| country | character | Name of the country |
+| admin1 | character | Administrative unit 1 |
+| admin2 | character | Administrative unit 2 |
+| admin3 | character | Administrative unit 3 |
+| instance_wp | character | Survey ID |
+| subdate_wp | character | Submission date |
+| latitude_wp | double | Latitude |
+| longitude_wp | double | Longitude |
+| elevation_wp | double | Elevation |
+| commid_wp | character | Community ID |
+| dataorg_wp | character | Code for country program |
+| timepoint_wp | character | Data collection time point |
+| cwfunded_wp | character | Charity water-funded water point |
+| cwid | character | Charity water point ID |
+| wptype | character | Water point type |
+| pumptype | character | Pump type |
+| drillmethod | character | Methodology used to dig the well or borehole |
+| piped_source | character | Source of piped water |
+| piped_pump | character | Infrastructure through which water travels from the source to the storage tank |
+| rehabyn | character | This water point has undergone rehabilitation with the assistance of an outside organization since its construction |
+| qtyhh_wp | double | Number of households served by this water point, either presently or during its last operational period |
+| whomanage_wp | character | Primarily responsible for managing this water point |
+| wp_age | double | Years between the reported construction year of the water point and the year of the survey |
+| rehab_age | double | Years between the reported most recent rehabilitation year of the water point and the year of the survey |
+| qtypeople_wp | double | Number of people served by this water point, either now or the last time it was working |
+| wateravailable | character | Water availability from this water point |
+| functional3 | character | Functionality rating for water point: ‘Abandoned or not functional’ means no water available \>1 year or no water available today OR (water available, but insufficient quantity AND downtime reported in prior 2 weeks), ‘Partially functional’ means water is available with sufficient quantity - 20L in 5 min - but downtime reported in prior 2 weeks or water is available, but insufficient quantity - 20L in 5 min - and no downtime reported in prior 2 weeks and ‘Functional’ means water is available, sufficient quantity is available - 20L in 5 minutes - and no downtime reported in prior 2 weeks |
+| whynowatertoday_wp | character | Reason for unavailability of water from this water point today |
+| whynowatertoday_wp_other | character | Other reason for water not being available today |
+| minutesfill20l | double | Time required to fill the 20 liters container |
+| brokendays_wp | double | Number of days it took to repair water the point last time it broke down |
+| qtymonthsnowater_wp | double | Number of months in the past year when water was not available from this water point because it was dry |
+| downtime2weeks | character | Water has not been available from this water point for a full day or more due to breakdown, seasonal dryness, or lack of fuel or electricity in the past two weeks |
+| lockedfullday_wp | character | Service has been turned off or the water point has been locked in the past year by the management for reasons other than breakdowns |
+| pumpstrokes | double | Number of pump strokes needed until water begins to flow |
+| photo_wp | character | Photograph of the water point |
+| grant_number_wp | double | Water grant number |
+| wc_present_wp | character | Existence of water committee in this community that manages water points used for drinking |
+| paytocollect_wp | character | Obligation for people to contribute money to collect water in this community |
+| balance_any_dollars_wp | double | Amount of money saved by the committee (converted to USD) |
+| improved_wponly_wp | double | Number of improved water point types used in the community |
+| qtyhh_c_wp | double | Number of households in this community |
+| wc_admin_index_wp | character | Administrative index for water committee: ‘Inadequate’ means WC hasn’t met in \>6 months, ‘Minimum’ means WC has reported to have met within 6 months, ‘Moderate’ means WC has reported to have met within 6 months, and has at least 1/3 female members and ‘Advanced’ means WC has reported to have met within 6 months, has at least 1/3 female members, AND has record of a meeting within previous 6 months |
+| wc_finance_index_wp | character | Finance index for water committee: ‘Inadequate’ means WC does not collect fees, ‘Minimum’ means WC reports a fee collection system, ‘Moderate’ means WC reports collecting fees and reports having savings and ‘Advanced’ means WC reports collecting fees and reports having savings, can demonstrate a fee collection or balance, and reports that money is kept in a cash box, bank account, mobile money, or borehole banking |
+| wc_maint_index_wp | character | Maintenance index for water committee: ‘Inadequate’ means WC cannot identify a person for water point maintenance, ‘Minimum’ means WC can identify a person for water point maintenance , ‘Moderate’ means WC can identify a repair person and that person has had training. Plus, the community has access to tools and spare parts and ‘Advanced’ means WC can identify a repair person and that person has had training. Plus, the community has access to tools and spare parts AND reported that someone has performed preventive maintenence within the past year |
+| wc_mgmt_index_wp | character | Overall management index for water committee: ‘Inadequate’ means WC is inadequate in any of the above indices, ‘Minimum’ means WC meets minimum level in all above indices, ‘Moderate’ means WC meets moderate level in all above indices and ‘Advanced’ means WC meets moderate level in all above indices AND advanced level in at least one of the above |
+| wc_savings_wp | double | Existence of money saved from water committee to repair water points |
+| wpqty_wp | double | Number of drinking water points in this community, working or not |
+| pop_1000 | double | Population aggregated for a 1-km radius around the water point (data from from <https://www.worldpop.org/>) |
+| annual_rain | double | Average annual mm of precipitation for administrative unit 2 (average from 1991-2020, from <https://climateknowledgeportal.worldbank.org/>) |
+| season | character | Season of data collection, according to hostorical rainall amounts (from <https://climateknowledgeportal.worldbank.org/>) |
+
+## Examples
+
+### Pie Chart of Water Points Functionality
+
+What are the statuses of the water points? Are they functional?
+
+``` r
+
+library(dplyr)
+library(ggplot2)
+
+# Define custom colors
+custom_colors <- c("lightblue", "orange", "purple")
+
+# Create the pie chart
+rwpfunctionality |>
+  count(functional3) |> 
+  ggplot(aes(x = "", y = n, fill = functional3)) +
+  geom_bar(stat = "identity") +
+  coord_polar("y", start = 0) +
+  scale_fill_manual(values = custom_colors) +  # Set custom colors
+  labs(title = "Functionality rating for water points", fill = NULL,
+       x = "",  # Empty x-axis label
+       y = "Count")  # y-axis label
+```
+
+![](reference/figures/README-unnamed-chunk-6-1.png) Based on this pie
+chart, it could be interesting to redefine the category “Partially
+functional” to gain insights and precision on this aspect of the data.
+Most water points are functional: 1333 of 1793.
+
+### Water Points Types
+
+What are the different types of water points?
+
+``` r
+
+# Create a horizontal bar plot of water point types
+ggplot(rwpfunctionality, aes(x = wptype)) +
+  geom_bar() +
+  labs(title = "Distribution of Water Points Types",
+       x = "Water Point Type",
+       y = "Frequency") +
+  coord_flip()  # Flip coordinates to make it horizontal
+```
+
+![](reference/figures/README-unnamed-chunk-7-1.png)
+
+This plot provides insight into the distribution of different types of
+water points present in the dataset. Understanding the prevalence of
+each type is valuable for various purposes, such as evaluating the
+functionality of each type to inform future development projects. For
+instance, it helps identifying which types are more common and could
+potentially inform decisions on prioritizing maintenance or constructing
+more efficient or suitable water point types.
+
+## References
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/rwpfunctionality/blob/main/LICENSE.md).
+
+## Citation
+
+To cite this package, please use:
+
+``` r
+
+citation("rwpfunctionality")
+#> To cite package 'rwpfunctionality' in publications use:
+#> 
+#>   Götschmann M, Murray A, Stone G, Yang A, Lawrence N, Matthews H,
+#>   Kayser G (2024). "rwpfunctionality: Water point functionality in
+#>   sub-Saharan Africa and South Asia." doi:10.5281/zenodo.10878634
+#>   <https://doi.org/10.5281/zenodo.10878634>.
+#>   <https://github.com/openwashdata/rwpfunctionality>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Misc{gotschmann_etall:2024,
+#>     title = {rwpfunctionality: Water point functionality in sub-Saharan Africa and South Asia},
+#>     author = {Margaux Götschmann and Anna L. Murray and Gabriela Stone and Audrey R. Yang and Nicholas F. Lawrence and Hannah Matthews and Georgia L. Kayser},
+#>     year = {2024},
+#>     doi = {10.5281/zenodo.10878634},
+#>     url = {https://github.com/openwashdata/rwpfunctionality},
+#>     abstract = {Water point monitoring data associated with the paper "[Rural water point functionality estimates and associations: evidence from nine countries in sub-Saharan Africa and South Asia](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR034679)" (Murray, Anna L et al., 2024).},
+#>     keywords = {open data,washdata,water points,functionality,rural water supply,water committees,Ethiopia,India,Malawi,Mali,Mozambique,Nepal,Niger,Rwanda,Uganda,management,open-data,r,wash,water,waterpoint},
+#>     version = {0.0.1},
+#>   }
+```
+
+Allaire, Maura, Haowei Wu, and Upmanu Lall. 2018. “National Trends in
+Drinking Water Quality Violations.” *Proceedings of the National Academy
+of Sciences* 115 (9): 2078–83.
+<https://doi.org/10.1073/pnas.1719805115>.
+
+Burt, Zachary, Ayşe Ercümen, Narayana Billava, and Isha Ray. 2018. “From
+Intermittent to Continuous Service: Costs, Benefits, Equity and
+Sustainability of Water System Reforms in Hubli-Dharwad, India.” *World
+Development* 109 (C): 121–33.
+
+Klug, Tori, Katherine Shields, and Jamie Bartram. 2018. “A
+Categorization of Water System Breakdowns: Evidence from Liberia,
+Nigeria, Tanzania, and Uganda.” *Science of The Total Environment*
+619620 (April): 1126–32.
+<https://doi.org/10.1016/j.scitotenv.2017.11.183>.
+
+Murray, Anna L., Gabriela Stone, Audrey R. Yang, Nicholas F. Lawrence,
+Hannah Matthews, and Georgia L. Kayser. 2024. “Rural Water Point
+Functionality Estimates and Associations: Evidence From Nine Countries
+in Sub-Saharan Africa and South Asia.” *Water Resources Research* 60
+(2): e2023WR034679. <https://doi.org/10.1029/2023WR034679>.
+
+“Progress on Household Drinking Water, Sanitation and Hygiene,
+2000-2020: Five Years into the SDGs.” 2021. In *UNICEF DATA*.
+<Https://data.unicef.org/resources/progress-on-household-drinking-water-sanitation-and-hygiene-2000-2020/>.
+
+*Safely Managed Drinking-Water*. 2017.
+<Https://www.who.int/publications-detail-redirect/9789241565424>.
+
+Valcourt, Nicholas, Jeffrey Walters, Amy Javernick-Will, Karl Linden,
+and Betelhem Hailegiorgis. 2020. “Understanding Rural Water Services as
+a Complex System: An Assessment of Key Factors as Potential Leverage
+Points for Improved Service Sustainability.” *Sustainability* 12 (3):
+1243. <https://doi.org/10.3390/su12031243>.
+
+# Package index
+
+## All functions
+
+- [`rwpfunctionality`](https://openwashdata.github.io/rwpfunctionality/reference/rwpfunctionality.md)
+  : Water point functionality in sub-Saharan Africa and South Asia
+
