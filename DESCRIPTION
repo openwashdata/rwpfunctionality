@@ -24,3 +24,9 @@ Depends:
 LazyData: true
 Language: en-GB
 Date: 2024-03-11
+Config/Needs/website: rmarkdown, tidyverse, kableExtra
+URL: https://github.com/openwashdata/rwpfunctionality
+BugReports: https://github.com/openwashdata/rwpfunctionality/issues
+X-schema.org-keywords: open data, washdata, water points, functionality, rural water supply, water committees, Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
+X-schema.org-spatialCoverage: Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
+X-schema.org-temporalCoverage: 2017-05-22/2020-12-19
