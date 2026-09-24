@@ -9,3 +9,4 @@
 ^pkgdown$
 ^\.github$
 ^references
+^package_processing\.R$

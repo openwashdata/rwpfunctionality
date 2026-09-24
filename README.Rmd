@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+knitr::opts_chunk$set(screenshot.force = FALSE)
 
 library(tidyverse)
 ```
@@ -68,7 +69,7 @@ Sustained functionality of rural water systems is a global challenge. Addressing
 
 The dataset includes observations of water point functionality and management committee questionnaires. Displayed on the map are the locations of the water points.
 
-![](man/figures/map.png)
+<img src="man/figures/map.png" alt="Map of the water point locations in the nine countries" width="100%"/>
 
 The package provides access to one single dataset.
 
@@ -115,11 +116,9 @@ rwpfunctionality |>
   scale_fill_manual(values = custom_colors) +  # Set custom colors
   labs(title = "Functionality rating for water points", fill = NULL,
        x = "",  # Empty x-axis label
-       y = "Count") +  # y-axis label
-  scale_fill_manual(labels = c("Functional", "Partially functional", "Abandoned or not functional"),
-                    values = custom_colors)  # Custom legend labels
+       y = "Count")  # y-axis label
 ```
-Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. However, we still clearly see that only a small part of the water points are functional.
+Based on this pie chart, it could be interesting to redefine the category "Partially functional" to gain insights and precision on this aspect of the data. Most water points are functional: `r sum(rwpfunctionality$functional3 == "Functional")` of `r nrow(rwpfunctionality)`.
 
 ### Water Points Types
 
@@ -146,7 +145,7 @@ This plot provides insight into the distribution of different types of water poi
 ## License
 
 Data are available as 
-[CC-BY](https://github.com/openwashdata/rwpfunctionality/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/rwpfunctionality/blob/main/LICENSE.md).
 
 ## Citation
 

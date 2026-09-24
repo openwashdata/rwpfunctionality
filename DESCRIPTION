@@ -1,6 +1,5 @@
 Package: rwpfunctionality
-Title: Water point functionality assessment in nine sub-Saharan Africa and South
-    Asia countries
+Title: Water point functionality in sub-Saharan Africa and South Asia
 Version: 0.0.1
 Authors@R: c(
     person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
@@ -18,9 +17,15 @@ Description: Water point monitoring data associated with the paper "[Rural water
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true
 Language: en-GB
 Date: 2024-03-11
+Config/Needs/website: rmarkdown, tidyverse, kableExtra
+URL: https://github.com/openwashdata/rwpfunctionality
+BugReports: https://github.com/openwashdata/rwpfunctionality/issues
+X-schema.org-keywords: open data, washdata, water points, functionality, rural water supply, water committees, Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
+X-schema.org-spatialCoverage: Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
+X-schema.org-temporalCoverage: 2017-05-22/2020-12-19
+Config/roxygen2/version: 8.0.0
