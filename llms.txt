@@ -1,5 +1,7 @@
 # rwpfunctionality
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 This package offers users comprehensive documentation on surveys
 conducted to assess water point functionality and management committees.
 These surveys were carried out across nine countries in both sub-Saharan
