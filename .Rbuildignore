@@ -10,3 +10,5 @@
 ^\.github$
 ^references
 ^package_processing\.R$
+^_brand\.yml$
+^logos$

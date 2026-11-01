@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rwpfunctionality
+# rwpfunctionality <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -10,8 +10,6 @@
 [![R-CMD-check](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/rwpfunctionality/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.10878634)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 This package offers users comprehensive documentation on surveys
 conducted to assess water point functionality and management committees.
@@ -1203,6 +1201,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/rwpfunctionality/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 To cite this package, please use:
 

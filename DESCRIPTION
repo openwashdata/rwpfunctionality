@@ -24,7 +24,7 @@ Depends:
 LazyData: true
 Language: en-GB
 Date: 2024-03-11
-Config/Needs/website: rmarkdown, tidyverse, kableExtra
+Config/Needs/website: rmarkdown, tidyverse, kableExtra, brand.yml
 URL: https://github.com/openwashdata/rwpfunctionality
 BugReports: https://github.com/openwashdata/rwpfunctionality/issues
 X-schema.org-keywords: open data, washdata, water points, functionality, rural water supply, water committees, Ethiopia, India, Malawi, Mali, Mozambique, Nepal, Niger, Rwanda, Uganda
@@ -40,4 +40,5 @@ Config/washr/publisher: Published by [openwashdata](https://openwashdata.org), a
 Config/washr/home: https://openwashdata.org
 Config/washr/catalog: https://openwashdata.org/pages/gallery/data/
 Config/washr/community: This package is part of [openwashdata](https://openwashdata.org). Browse the [data catalogue](https://openwashdata.org/pages/gallery/data/) or get the [newsletter](https://openwashdata.org/pages/newsletter/).
-Config/washr/version: 1.2.1
+Config/washr/version: 1.2.2
+Config/washr/brand: v1.1.0
